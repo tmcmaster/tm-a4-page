@@ -1,0 +1,18 @@
+{
+    "name": "tm-a4-page",
+    "version": "0.0.1",
+    "description": "Resume created by YAML data.",
+    "author": "Tim McMaster",
+    "homepage": "https://tmcmaster.github.io/tm-a4-page",
+    "license": "MIT",
+    "repository": "https://github.com/tmcmaster/tm-a4-page",
+    "scripts": {
+        "build": "npm install && npx @pika/web"
+    },
+    "dependencies": {
+        "lit-element": "^2.0.1",
+        "lit-html": "^1.0.0",
+        "@wonkytech/tm-a4-page": "^0.0.1"
+    },
+    "devDependencies": {}
+}
