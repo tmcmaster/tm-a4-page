@@ -76,11 +76,10 @@ class TmA4Page extends LitElement {
                     width: calc(100vh / 1.4);
                 }
             }
-            
-            h3 {
-                text-align: center;
-                margin-top: 20vh;
-                color: grey;
+
+            ::slotted(*[slot="body"]){
+                width: 100%;
+                height: 100%;
             }
         `];
     }
@@ -88,11 +87,13 @@ class TmA4Page extends LitElement {
     // noinspection JSUnusedGlobalSymbols
     render() {
         return html`
-            <div class="body"><h3>This is an A4 page</h3></div>
+            <div class="body">
+                <slot name="body">
+                    <h3 style="text-align: center;margin-top: 40vh;color: grey">This is an A4 page</h3>
+                </slot>
+            </div>
         `;
     }
-
-
 }
 
 window.customElements.define('tm-a4-page', TmA4Page);
