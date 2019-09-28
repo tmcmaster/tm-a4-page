@@ -12,7 +12,7 @@
     "dependencies": {
         "lit-element": "^2.0.1",
         "lit-html": "^1.0.0",
-        "@wonkytech/tm-a4-page": "^0.0.3"
+        "@wonkytech/tm-a4-page": "^0.0.4"
     },
     "devDependencies": {}
 }
